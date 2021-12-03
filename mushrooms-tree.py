@@ -3,23 +3,46 @@ import matplotlib.pyplot as plt
 from sklearn.tree import plot_tree
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
+from mlflow import log_metric, log_param, log_artifacts
+import os
+from sklearn.metrics import plot_confusion_matrix
 
-#Daten werden eingelesen#
-df = pd.read_csv("./mushrooms.csv") #Ausprägungen sind noch Buchstaben in 23 Columns
-df = pd.get_dummies(df) # Ausprägungen sind 1en und 0en in 119 Columns
+#Daten werden eingelesen# #Ausprägungen sind noch Buchstaben in 23 Columns# # Ausprägungen sind 1en und 0en in 119 Columns#
+df = pd.read_csv("./mushrooms.csv")
+df = pd.get_dummies(df)
 
-X = df.drop(["class_e","class_p"],axis=1).values # Trennung von X und Y, genommen werden X-Daten
-y = df["class_e"].values # Trennung von X und Y, genommen werden Y-Daten
+X = df.drop(["class_e","class_p"],axis=1).values
+y = df["class_e"].values
 
-X_train, X_test, y_train, y_test = train_test_split(X,y,random_state=0,test_size=0.25) # Split in Train- und Test-Daten
+# Split in Train- und Test-Daten
+X_train, X_test, y_train, y_test = train_test_split(X,y,random_state=0,test_size=0.25)
 
-model = DecisionTreeClassifier(criterion='entropy',max_depth=5)
-
+# Fit a model
+depth = 8
+criterion = 'entropy'
+model = DecisionTreeClassifier(criterion=criterion, max_depth=depth)
 model.fit(X_train,y_train)
 
-print(model.score(X_test,y_test))
+acc = model.score(X_test,y_test)
+print(acc)
 
+# incorporate mlflow for tracking
+log_param("depth", depth)
+log_param("criterion", criterion)
 
+log_metric("accuracy", acc)
+
+if not os.path.exists("outputs"):
+        os.makedirs("outputs")
+with open("outputs/metrics.txt", "w") as f:
+        f.write("hello world!")
+        f.write("Accuracy: " + str(acc) + "\n")
+
+log_artifacts("outputs")
+
+# Plot confusion matrix and tree
+disp = plot_confusion_matrix(model, X_test, y_test, normalize='true',cmap=plt.cm.Blues)
+plt.savefig('confusion_matrix.png')
 
 plt.figure(dpi=100)
 plot_tree(model,fontsize=6,
@@ -28,3 +51,5 @@ plot_tree(model,fontsize=6,
           filled=True)
 
 plt.show()
+
+# TO DO: file for cicd

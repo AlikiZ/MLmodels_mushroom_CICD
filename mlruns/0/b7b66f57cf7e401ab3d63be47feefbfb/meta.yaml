@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/AlikiZavaropoulou-ar/projects/cicd-mlops/CICD/mlruns/0/b7b66f57cf7e401ab3d63be47feefbfb/artifacts
+end_time: 1638542271979
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: b7b66f57cf7e401ab3d63be47feefbfb
+run_uuid: b7b66f57cf7e401ab3d63be47feefbfb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1638542259324
+status: 3
+tags: []
+user_id: AlikiZavaropoulou-ar
