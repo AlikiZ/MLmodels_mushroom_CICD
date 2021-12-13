@@ -32,12 +32,12 @@ log_param("criterion", criterion)
 
 log_metric("accuracy", acc)
 
-if not os.path.exists("outputs"):
-        os.makedirs("outputs")
+#if not os.path.exists("outputs"):
+#        os.makedirs("outputs")
 with open("outputs/metrics.txt", "w") as f:
         f.write("Accuracy: " + str(acc) + "\n")
 
-log_artifacts("outputs")
+#log_artifacts("outputs")
 
 # Plot confusion matrix and tree
 disp = plot_confusion_matrix(model, X_test, y_test, normalize='true',cmap=plt.cm.Blues)
