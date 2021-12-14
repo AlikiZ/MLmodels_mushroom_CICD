@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Kai-FabianWolf-areto/Projects/CICD/mushrooms/CICD/mlruns/2/dc07df329b7a4d05ab05208bfa2ceffc/artifacts
+end_time: 1639424568708
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+name: ''
+run_id: dc07df329b7a4d05ab05208bfa2ceffc
+run_uuid: dc07df329b7a4d05ab05208bfa2ceffc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1639424565980
+status: 3
+tags: []
+user_id: Kai-FabianWolf-areto

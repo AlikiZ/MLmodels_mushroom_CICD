@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/AlikiZavaropoulou-ar/projects/cicd-mlops/CICD/mlruns/0/5e9f2d14d3f94d36a63b1eb631a4958c/artifacts
+end_time: 1639410512618
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 5e9f2d14d3f94d36a63b1eb631a4958c
+run_uuid: 5e9f2d14d3f94d36a63b1eb631a4958c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1639410512525
+status: 3
+tags: []
+user_id: Kai-FabianWolf-areto
