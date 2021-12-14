@@ -121,4 +121,4 @@ plot_tree(model_dt,fontsize=6,
 #plt.show()
 # TO DO: file for cicd
 
-log_artifacts("outputs") ## Schreibt irgendwie auf Alikis PC
+#log_artifacts("outputs") ## Schreibt irgendwie auf Alikis PC
