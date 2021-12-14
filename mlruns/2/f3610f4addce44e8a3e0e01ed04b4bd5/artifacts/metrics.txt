@@ -1,0 +1,37 @@
+Model: Decision Tree 
+Accuracy Depth Runtime 
+0.877    1  0.009
+0.930    2  0.016
+0.960    3  0.018
+0.985    4  0.018
+1.0    5  0.017
+1.0    6  0.016
+1.0    7  0.015
+1.0    8  0.016
+Accuracy_lr: 1.0
+Accuracy_nb: 0.96602658788774
+Accuracy_lr: 1.0
+Accuracy_nb: 0.96602658788774
+Accuracy_lr: 1.0
+Accuracy_nb: 0.96602658788774
+Accuracy_lr: 1.0
+Accuracy_nb: 0.96602658788774
+Accuracy_lr: 1.0
+Accuracy_lr: 1.0
+Accuracy_nb: 0.96602658788774
+Accuracy_lr:asfdasdf 1.0
+Accuracy_lr:asfdasdf 1.0
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774
+Accuracy_nb: 0.96602658788774

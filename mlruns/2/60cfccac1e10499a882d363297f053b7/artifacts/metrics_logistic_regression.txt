@@ -1,0 +1,4 @@
+Accuracy_lr: 1.0
+Accuracy_lr: 1.0
+Accuracy_lr: 1.0
+Accuracy_lr: 1.0

@@ -1,0 +1,4 @@
+Model: Logistic Regression 
+Solver Accuracy Runtime 
+newton-cg  1.00.141
+lbfgs  1.00.044

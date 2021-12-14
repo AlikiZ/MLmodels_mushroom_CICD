@@ -1,0 +1,8 @@
+Model: Gaussian Naive Bayes 
+
+  Smoothing Accuracy Runtime 
+0 1e-07  1.0 0.013
+1 1e-08  1.0 0.013
+2 1e-09  1.0 0.014
+3 1e-10  1.0 0.013
+4 1e-11  1.0 0.014

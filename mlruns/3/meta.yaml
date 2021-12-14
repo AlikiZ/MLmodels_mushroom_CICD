@@ -1,0 +1,4 @@
+artifact_location: file:///C:/Users/Kai-FabianWolf-areto/Projects/CICD/mushrooms/CICD/mlruns/3
+experiment_id: '3'
+lifecycle_stage: active
+name: ToxicMushrooms

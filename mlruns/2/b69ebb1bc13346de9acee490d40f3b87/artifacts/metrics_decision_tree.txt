@@ -1,0 +1,3 @@
+Model: Logistic Regression 
+Solver Accuracy Runtime 
+0  1.0
