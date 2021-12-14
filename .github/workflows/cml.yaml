@@ -1,5 +1,16 @@
 name: model-training
-on: [push, pull_request, create]
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+  issues:
+    types: [opened, edited, milestoned]
 jobs:
   run:
     runs-on: ubuntu-latest
