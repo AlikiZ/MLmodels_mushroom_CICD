@@ -1,7 +1,7 @@
 name: model-training
 on:
   # Trigger the workflow on push or pull request,
-  # but only for the main branch
+  # for the main and dev branch
   push:
     branches:
       - main
